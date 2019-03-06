@@ -62,9 +62,13 @@
             "include_dirs": [
                 "crypto",
             ],
+	    "cflags_c": [
+		"-std=gnu11 -maes"
+	    ],
             "cflags_cc": [
-                "-std=c++0x"
-            ],
+                "-std=c++0x",
+		"-maes",
+            ],		
         }
     ]
 }
